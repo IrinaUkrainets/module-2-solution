@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+    color: crimson;
+    margin-top: 20px;
+}
+.row{
+    width: 100%;
+    overflow: none;
+}
+.container{
+    border: 1px solid black;
+    padding: 40px 20px 20px;                                                                            
+    position: relative;
+    width: 90%;
+    overflow: none;
+    margin: 20px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2),rgba(0,0,0,0.5));
+
+}
+.dummyText{
+    width: 100%;
+    font-size: 20px;
+}
+#chickenHeader, #beefHeader, #sushiHeader{
+    width: 150px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+#chickenHeader{
+    background-color: pink;
+}
+#beefHeader{
+    background-color: indianred;
+}
+#sushiHeader{
+    background-color: lightgoldenrodyellow;
+}
+
+
+/* large devices - desktop  */
+@media (min-width: 992px){
+    .col-4{
+        float: left;
+    }
+
+    .col-4 {width: 33.33%;}
+}
+/* medium devices - tablets */
+@media (min-width: 768px) and (max-width: 991px){
+    .col-md-6, .col-md-12{
+        float: left;
+    }
+    .col-md-6 {width: 50%;}
+
+    .col-md-12 {
+        width: 100%;
+    }
+    .col-md-12 >.container{
+        width: 95%;
+    }
+}
+/* small devices - phones   */
+@media (max-width: 767px){
+    .col-sm-12{
+        float: left;
+    }
+    .col-sm-12 {width: 100%;}
+}
